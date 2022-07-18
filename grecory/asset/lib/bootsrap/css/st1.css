@@ -1,0 +1,38 @@
+body{
+    background-image: url(https://blogs.gwu.edu/himmelfarb/files/2020/10/blood-5427229_1280.jpg);
+   background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.banner-container
+{
+    height: 15vh;
+    
+}
+.banner-container h1{
+    font-size: 3.5rem;
+    background-color: rgba(215, 248, 250, 0.2);
+    font-family: 'Handlee',cursive;
+    text-align: center;
+}
+.features-col{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin: 40px;
+    transition: .4s;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.features-col h2{
+    font-size: 3.5rem;
+    color: rgb(218, 5, 5);
+    font-family: 'Handlee',cursive;
+    
+    padding-left: 20px;
+}
+.features-col:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 6px 5px black;
+}

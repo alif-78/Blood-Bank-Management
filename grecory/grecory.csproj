@@ -1,0 +1,336 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A18BE63B-0FF1-45EA-AFCA-F7DC2CBE7C47}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>grecory</RootNamespace>
+    <AssemblyName>grecory</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44349</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asset\image\blood.png" />
+    <Content Include="asset\image\bloodDonate1.jpg" />
+    <Content Include="asset\image\bloodDonate10.jpg" />
+    <Content Include="asset\image\bloodDonate12.jpg" />
+    <Content Include="asset\image\bloodDonate5.jpg" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.min.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.rtl.css" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.rtl.min.css" />
+    <Content Include="asset\lib\bootsrap\css\login.css" />
+    <Content Include="asset\lib\bootsrap\css\st1.css" />
+    <Content Include="asset\lib\bootsrap\css\st2.css" />
+    <Content Include="asset\lib\bootsrap\css\style.css" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.bundle.js" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.bundle.min.js" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.esm.js" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.esm.min.js" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.js" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="view\ABnegative.aspx" />
+    <Content Include="view\ABpositive.aspx" />
+    <Content Include="view\admin\dashboard.aspx" />
+    <Content Include="view\admin\products.aspx" />
+    <Content Include="view\admin\categories.aspx" />
+    <Content Include="view\admin\seller.aspx" />
+    <Content Include="view\Anegative.aspx" />
+    <Content Include="view\Apoisitive.aspx" />
+    <Content Include="view\Bnegative.aspx" />
+    <Content Include="view\Bpositive.aspx" />
+    <Content Include="view\Demo.aspx" />
+    <Content Include="view\home.aspx" />
+    <Content Include="view\login.aspx" />
+    <Content Include="view\Onegative.aspx" />
+    <Content Include="view\Opositive.aspx" />
+    <Content Include="view\BloodInformation.aspx" />
+    <Content Include="view\User.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Function.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\ABnegative.aspx.cs">
+      <DependentUpon>ABnegative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\ABnegative.aspx.designer.cs">
+      <DependentUpon>ABnegative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\ABpositive.aspx.cs">
+      <DependentUpon>ABpositive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\ABpositive.aspx.designer.cs">
+      <DependentUpon>ABpositive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\admin\adminMaster.Master.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\admin\adminMaster.Master.designer.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="view\admin\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\admin\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\admin\products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\admin\products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\admin\categories.aspx.cs">
+      <DependentUpon>categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\admin\categories.aspx.designer.cs">
+      <DependentUpon>categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\admin\seller.aspx.cs">
+      <DependentUpon>seller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\admin\seller.aspx.designer.cs">
+      <DependentUpon>seller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Anegative.aspx.cs">
+      <DependentUpon>Anegative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Anegative.aspx.designer.cs">
+      <DependentUpon>Anegative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Apoisitive.aspx.cs">
+      <DependentUpon>Apoisitive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Apoisitive.aspx.designer.cs">
+      <DependentUpon>Apoisitive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Bnegative.aspx.cs">
+      <DependentUpon>Bnegative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Bnegative.aspx.designer.cs">
+      <DependentUpon>Bnegative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Bpositive.aspx.cs">
+      <DependentUpon>Bpositive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Bpositive.aspx.designer.cs">
+      <DependentUpon>Bpositive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Onegative.aspx.cs">
+      <DependentUpon>Onegative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Onegative.aspx.designer.cs">
+      <DependentUpon>Onegative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Opositive.aspx.cs">
+      <DependentUpon>Opositive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Opositive.aspx.designer.cs">
+      <DependentUpon>Opositive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\BloodInformation.aspx.cs">
+      <DependentUpon>BloodInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\BloodInformation.aspx.designer.cs">
+      <DependentUpon>BloodInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.min.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.rtl.css.map" />
+    <Content Include="asset\lib\bootsrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.bundle.js.map" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.esm.js.map" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.js.map" />
+    <Content Include="asset\lib\bootsrap\js\bootstrap.min.js.map" />
+    <None Include="packages.config" />
+    <Content Include="view\admin\adminMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="asset\js\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53050</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44349/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
